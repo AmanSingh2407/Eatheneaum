@@ -1,0 +1,148 @@
+ .myBook {
+     padding: 0 40px;
+     margin: 50px auto;
+     text-align: center;
+     min-height: 100vh;
+
+ }
+
+ .myBook h2 {
+     font-size: 35px;
+ }
+
+ .myBook-main-para {
+     margin: 10px auto;
+     width: 70%;
+     font-size: 15px;
+     color: #686767;
+ }
+
+ .myBook hr {
+     margin: 10px 0 50px 0;
+ }
+
+ .myBook-cards {
+     width: fit-content;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-around;
+     gap: 50px 30px;
+ }
+
+
+ .myBook-card {
+     padding: 20px 10px 15px;
+     width: 220px;
+     border-radius: 8px;
+     position: relative;
+     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+ }
+
+
+ .myBook-card-img img {
+     width: 150px;
+     max-height: 230px;
+     object-fit: cover;
+ }
+
+ .myBook-card-info h5 {
+     margin: 7px 0 12px;
+     width: 100%;
+     text-transform: capitalize;
+ }
+
+ .myBook-card-info-btn {
+     display: flex;
+     justify-content: space-between;
+ }
+
+ .myBook-card-info-btn button {
+     padding: 5px;
+     margin: 0 auto;
+     width: 40%;
+ }
+
+ .myBook-card-info-btn button a {
+     width: 100px;
+     color: #fff;
+ }
+
+ .myBook-validity {
+     padding: 4px 7px;
+     border-radius: 5px;
+     background-color: rgb(27 184 243);
+     color: white;
+     text-align: center;
+     position: absolute;
+     top: -9px;
+     right: -8px;
+     font-size: 12px;
+     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+
+ }
+
+ /*  --------------------  Media Query --------------  */
+
+ @media (max-width : 800px) {
+
+     .myBook {
+         margin: 20px auto 50px;
+         padding: 0 10px;
+     }
+
+     .myBook h2 {
+         font-size: 25px;
+     }
+
+     .myBook-main-para {
+         font-size: 14px;
+         width: 90%;
+     }
+
+     .myBook-card {
+         width: 180px;
+     }
+
+     .myBook-card-img img {
+         width: 120px;
+     }
+
+     .myBook-card-info h5 {
+         font-size: 10px;
+     }
+
+ }
+
+ @media (max-width : 500px) {
+
+     .myBook h2 {
+         font-size: 20px;
+     }
+
+     .myBook-cards {
+         gap: 30px 10px;
+     }
+
+     .myBook-card {
+         padding: 15px 10px 10px;
+         width: 150px;
+     }
+
+     .myBook-card-img img {
+         width: 100px;
+     }
+
+     .myBook-card-info h5,
+     .myBook-validity,
+     .myBook-main-para {
+         font-size: 8px;
+     }
+
+     .myBook-card-info-btn button {
+         font-size: 10px;
+     }
+
+ }

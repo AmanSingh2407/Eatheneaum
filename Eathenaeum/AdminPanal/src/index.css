@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Khojki&family=Outfit:wght@100..900&display=swap');
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: outfit;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  overflow-y: scroll;
+}
+
+.ad-Loading {
+  width: fit-content;
+  margin: 200px auto 0;
+  place-self: center;
+}
+
+.hidden {
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.d-flex {
+  display: flex;
+  align-items: center;
+}
+
+.a-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.gap-10 {
+  gap: 50px;
+}
+
+.mx-top-10 {
+  margin-top: 10px;
+}
+
+.text-underline {
+  text-decoration: underline;
+}
+
+.app-user-bock,
+.app-org-bock {
+  padding: 20px;
+  width: 300px;
+  font-size: 20px;
+  border: 5px solid red;
+  text-align: center;
+}
+
+
+.app-org-bock {
+  margin: 100px auto 0;
+}
+
+.app-user-bock {
+  margin: 200px auto 0;
+}

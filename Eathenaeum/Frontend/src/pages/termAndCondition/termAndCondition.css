@@ -1,0 +1,69 @@
+.tac {
+    padding: 20px 40px;
+    color: #333;
+}
+
+.tac-h1 {
+    font-size: 35px;
+    color: #585858;
+}
+
+.tac-box1 {
+    margin: 40px 0;
+}
+
+.tac-box1 p {
+    margin: 10px 0;
+
+}
+
+.tac-box1 ul li {
+    margin: 8px 15px;
+    list-style-type: disc;
+
+}
+
+/*----------------   Media Query     ---------------------- */
+
+@media (max-width : 800px) {
+    .tac-h1 {
+        font-size: 25px;
+    }
+
+    .tac {
+        padding: 20px;
+    }
+
+    .tac h2 {
+        font-size: 18px;
+    }
+
+    .tac p,
+    .tac ul li {
+        font-size: 13px;
+    }
+
+    .tac-box1 {
+        margin: 20px 0;
+    }
+
+}
+
+@media (max-width : 500px) {
+    .tac-h1 {
+        font-size: 22px;
+    }
+
+    .tac {
+        padding: 10px;
+    }
+
+    .tac h2 {
+        font-size: 13px;
+    }
+
+    .tac p,
+    .tac ul li {
+        font-size: 10px;
+    }
+}

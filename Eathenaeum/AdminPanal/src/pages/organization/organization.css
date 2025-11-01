@@ -1,0 +1,147 @@
+.org {
+    padding: 70px 0;
+    width: 100%;
+    height: 200vh;
+    position: relative;
+}
+
+.org-details {
+
+    margin: auto;
+    padding: 20px 30px;
+    max-width: 1000px;
+    border-radius: 10px;
+    background-color: #fff;
+    /* box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px; */
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.org-details hr {
+    margin: 10px 0;
+}
+
+.org-details-head {
+    margin-bottom: 50px;
+    display: flex;
+    position: relative;
+}
+
+.org-details-head h2 {
+    font-size: 35px;
+    text-transform: capitalize;
+}
+
+.org-details-head div {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.org-details-head div button { 
+    margin: 0 5px;
+    min-width: 80px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer; 
+}
+
+.org-details-info {
+    margin: 40px 0;
+}
+
+.org-details-info h4 {
+    margin: 20px 0;
+    padding-bottom: 10px;
+    font-size: 25px;
+    font-weight: 500;
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+.org-details-info-main {
+    margin: 30px 0;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    font-size: 35px;
+    gap: 10px;
+    border: 1px solid black;
+}
+
+.org-details-info-main h6 {
+    font-size: 30px;
+    color: red;
+}
+
+.org-details-bank {
+    margin: 10px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 40px;
+    /* border: 1px solid red; */
+}
+
+/* .org-details-bank h4 {
+    width: 100%;
+} */
+
+.org-details-bank div h6 {
+    font-size: 16px;
+}
+
+/* .org-details-bank div {
+    width: max(400px, 50%);
+    border: 1px solid red;
+} */
+
+.org-details-bank div p {
+    margin-top: 10px;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+
+
+
+.org-details-user {
+    margin: 20px 0;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    grid-template-columns: 1fr 1.5fr 2fr 1.5fr 1fr;
+}
+
+.org-details-user img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+
+ins,
+del,
+.org_blue {
+    padding: 5px 10px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+del {
+    background-color: #f5200c;
+}
+
+ins {
+    background-color: #e6ed21;
+}
+
+.org_blue {
+    background-color: #314ddb;
+    color: #fff;
+    cursor: pointer;
+}

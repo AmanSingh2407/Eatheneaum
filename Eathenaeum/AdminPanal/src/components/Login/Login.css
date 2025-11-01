@@ -1,0 +1,122 @@
+/* Hide Arrows From Input Number */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.ad-login {
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    background-color: #00000090;
+    display: grid;
+}
+
+.ad-login-container {
+    place-self: center;
+    width: max(23vw, 330px);
+    color: #808080;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 25px 30px;
+    border-radius: 8px;
+    font-size: 14px;
+    animation: FadeIn 0.5s;
+}
+
+.ad-login-container h2 {
+    margin: 0px 0;
+}
+
+/* .ad-login-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #6a6969;
+} */
+
+/* .login-title img {
+    width: 16px;
+    cursor: pointer;
+} */
+
+.ad-login-inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+.ad-login-inputs input {
+    margin-top: 10px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #747373;
+    padding: 10px 10px;
+
+}
+
+/* 
+.ad-login-popoup-condition {
+    display: flex;
+    align-items: start;
+    margin-top: -15px;
+    gap: 8px;
+} */
+
+/* .ad-login-popoup-condition input {
+    margin: 4.5px 0;
+} */
+
+.ad-login-reset {
+    margin-top: 10px;
+    text-align: end;
+    color: blue;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.ad-login-container button {
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 10px;
+    background-color: #0056b3;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+/* .ad-login-option-change {
+    text-align: center;
+} */
+
+/* .ad-login-option-change span {
+    color: #0056b3;
+    font-weight: 500;
+    cursor: pointer;
+} */
+
+
+.ad-login-reset-back {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.ad-login-reset-back img {
+    width: 30px;
+}
+
+.login-resetOTP {
+   color: #333; 
+   margin-top: 7px; 
+   cursor: pointer;
+   text-align: end;
+   font-size: 14px;
+}

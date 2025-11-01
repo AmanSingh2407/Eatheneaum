@@ -1,0 +1,75 @@
+.feedback {
+    margin: 50px auto;
+    max-width: 900px;
+}
+
+.feedback h2 {
+    margin-bottom: 30px;
+    font-size: 40px;
+    font-weight: 500;
+    color: rgb(10, 10, 101);
+}
+
+.feedback-from {
+    min-height: 400px;
+}
+
+.feedback-from div {
+    margin: 25px 0;
+}
+
+.feedback-from input,
+.feedback-from textarea {
+    margin: 10px 0 5px;
+    padding: 10px;
+    width: 100%;
+    outline: none;
+    resize: none;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    background-color: aliceblue;
+
+}
+
+.feedback-from div p {
+    text-align: end;
+    font-size: 14px;
+    color: #6a6a6a;
+}
+
+
+.feedback-from button {
+    padding: 10px 20px; 
+    width: 100px; 
+}
+
+/* -----------  Media Query -----------  */
+
+@media (max-width : 900px) {
+    .feedback {
+        margin: 20px auto;
+    }
+
+    .feedback-from {
+        padding: 30px 15px;
+        box-shadow: none;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .feedback-from h2 {
+        font-size: 28px;
+    }
+
+    .feedback-from label {
+        font-size: 14px;
+    }
+
+    .feedback-from input {
+        font-size: 12px;
+    }
+
+}

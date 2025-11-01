@@ -1,0 +1,37 @@
+.editOrg-form h2 {
+    margin: 30px 0 15px;
+    color: #505050;
+}
+
+.editOrg-inputBox {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 16px;
+}
+
+.editOrg-form-leader {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.editOrg-inputBox label {
+    font-weight: 500;
+}
+
+.editOrg-inputBox input {
+    padding: 10px;
+}
+
+.editOrg-form button {
+    margin-top: 10px;
+    padding: 10px;
+    min-width: 250px;
+    font-size: 18px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 7px;
+    cursor: pointer;
+}

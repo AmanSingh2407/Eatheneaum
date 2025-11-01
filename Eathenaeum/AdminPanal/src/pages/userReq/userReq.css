@@ -1,0 +1,92 @@
+.userReq {
+    margin: 50px auto 100px;
+    width: min(1200px, 100%);
+    color: #333;
+}
+
+.userReq-h2 {
+    margin-bottom: 30px;
+    font-size: 35px;
+    color: red;
+}
+
+.userReq-table {
+    /* padding: 10px; */
+    margin-bottom: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 2fr 1fr 1fr;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.userReq-head {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    font-size: large;
+}
+
+.userReq-box {
+    margin: 15px 0;
+    min-width: 130px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+}
+
+.userReq-box-user button {
+    padding: 10px 15px;
+    text-align: start;
+    border: none;
+    background: none;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.userReq-box-user button img {
+    width: 30px;
+    height: 30px;
+}
+
+.userReq-box-user-img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.userReq-box-details-view {
+    margin-top: 5px;
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.userReq-more-details {
+    /* gap: 50px; */
+    margin-top: 15px;
+}
+
+.userReq-bold {
+    font-weight: 500;
+}
+
+.userReq-more-details-show {
+    margin: 5px 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.userReq-more-details-show div {
+    display: flex;
+    gap: 7px;
+}

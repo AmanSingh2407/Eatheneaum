@@ -1,0 +1,134 @@
+.ad-profile-container {
+    margin: 80px auto;
+
+}
+
+.ad-Profile {
+    margin: auto;
+    padding: 50px 25px;
+    max-width: 1100px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.ad-profile-add-bank-details {
+    position: absolute;
+    min-width: 150px;
+    top: 15px;
+    right: 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #434242;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.ad-profile-img {
+    display: flex;
+    flex-direction: column;
+}
+
+.ad-profile-img div {
+    padding: 10px;
+    margin: auto;
+    position: relative;
+    /* border: 1px solid red; */
+    border-radius: 50%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.ad-profile-img div img {
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    /* border: 0.3px solid black;   */
+}
+
+.ad-profile-img div label {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.ad-profile-img div label img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
+.ad-profile-img-save {
+    margin-top: 30px;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #565656;
+    color: #fff;
+    cursor: pointer;
+
+}
+
+.ad-Profile h2 {
+    margin-top: 40px;
+    margin-bottom: 15px;
+    font-size: 30px;
+    color: #737272;
+}
+
+.ad-profile-info {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.ad-profile-info div {
+    width: max(400px, 47%);
+    margin: 6px 0;
+    padding: 10px 20px;
+    display: flex;
+    background-color: #e5e5e5;
+    border-radius: 10px;
+    gap: 20px;
+}
+
+.ad-profile-info-head {
+    width: 25%;
+    text-align: start;
+}
+
+.ad-profile-info-value-email,
+.ad-profile-info-value {
+    width: 60%;
+    text-align: start;
+}
+
+.ad-profile-info-value {
+    text-transform: capitalize;
+}
+
+
+
+/* ----------------  Media Query --------------- */
+
+@media (max-width: 1100px) {
+    .ad-Profile {
+        padding: 0 25px 50px;
+        box-shadow: none;
+    }
+}
+
+@media (max-width: 900px) {
+    .ad-profile-info div {
+        width: 100%;
+        padding: 10px 20px;
+    }
+}

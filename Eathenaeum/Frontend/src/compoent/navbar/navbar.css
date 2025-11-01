@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@501&display=swap');
+
+.nav-flex {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navbar {
+    padding: 18px 15px;
+    box-sizing: border-box;
+    color: #333;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.navbar-logo {
+    font-family: "Signika Negative", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    color: #333;
+    font-size: 30px;
+    width: fit-content;
+    /* border: 1px solid red; */
+}
+
+.navbar-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    /* border: 2px solid red; */
+}
+
+.navbar-menu a {
+    color: #333;
+    padding: 8px 10px;
+    font-size: 18px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-menu a:hover {
+    background-color: #dfdede;
+}
+
+.navbar-search-box {
+    /* border: 2px solid red; */
+    width: 45%;
+    justify-content: center;
+    position: relative;
+}
+
+.navbar-search-box img {
+    width: 30px;
+}
+
+.navbar-search-box div {
+    width: 100%;
+}
+
+.navbar-search-box div input[type="text"] {
+    width: 100%;
+    padding: 12px 30px 12px 20px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    font-size: 17px;
+    color: black;
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+
+.navbar-search-box div button {
+    position: absolute;
+    right: 8px;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer; 
+}
+
+.navbar-search-box div button img {
+    margin-top: 7px;
+    width: 33px;
+}
+
+.navbar-search-result {
+    position: absolute;
+    z-index: 5;
+    top: 110%;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+    width: 100%;
+    left: 0;
+}
+
+.navbar-search-result li {
+    padding: 10px 15px;
+    text-align: start;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.navbar-search-result li:hover {
+    background-color: #cbcbcb;
+}
+
+.navbar-search-result li img {
+    height: 15px;
+    width: 15px;
+}
+
+.navbar-login-sigup button {
+    border: none;
+    border-radius: 30px;
+    background-image: linear-gradient(to right, #06beb6 0%, #48b1bf 51%, #06beb6 100%);
+    padding: 10px 25px;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    display: block;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.navbar-login-sigup button:hover {
+    background-position: right center; 
+    color: #fff;
+    text-decoration: none;
+}
+
+.search_btn {
+    display: none;
+    margin-right: 20px;
+}
+
+.navbar-cart {
+    margin-right: 20px;
+}
+
+.navbar-profile {
+    position: relative;
+    cursor: pointer;
+}
+
+.navbar-profile-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.navbar-profile-dropdown {
+    padding-bottom: 20px;
+    min-width: 250px;
+    position: absolute;
+    display: none;
+    z-index: 1;
+    right: 0;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.navbar-profile:hover .navbar-profile-dropdown {
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar-profile-dropdown-info {
+    margin-bottom: 10px;
+    padding: 20px 0 20px 25px;
+    display: flex;
+    align-items: center;
+    background-color: #c3c0c0;
+    border-radius: 10px 10px 0 0;
+}
+
+.navbar-profile-dropdown-info div {
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.navbar-profile-dropdown-info div p {
+    font-size: 13px;
+    color: rgb(19, 18, 18);
+
+}
+
+.navbar-profile-dropdown-option {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    padding: 10px 40px 10px 25px;
+}
+
+.navbar-profile-dropdown-option:hover {
+    background-color: #c3c0c0;
+}
+
+.navbar-profile-dropdown-option img {
+    max-width: 20px;
+}
+
+.navbar-profile-dropdown-option span {
+    margin-left: 10px;
+    font-size: 15px;
+    color: black;
+}
+
+.disable {
+    display: none;
+}
+
+
+
+/*     --------------------------------  Media Query ----------------------------*/
+
+@media (max-width: 1250px) {
+    .navbar-logo {
+        font-size: 20px;
+    }
+
+    .navbar-menu {
+        gap: 0;
+    }
+
+    .navbar-search-box div input[type="text"],
+    .navbar-menu a {
+        padding: 10px 10px;
+        font-size: 14px;
+    }
+
+
+    .navbar-search-box div button img {
+        width: 30px;
+        margin-top: 3px;
+    }
+
+    .navbar-login-sigup button {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+
+}
+
+
+@media (max-width: 1000px) {
+    .navbar {
+        padding: 15px 15px;
+    }
+
+    .navbar-menu {
+        display: none;
+    }
+
+    .navbar-search-box {
+        width: 50%;
+    }
+
+}
+
+@media (max-width: 800px) {
+
+    
+    .navbar-search-box div input[type="text"],
+    .navbar-login-sigup button {
+        padding: 10px 10px;
+        font-size: 11px;
+    }
+
+    .navbar-search-box div button img {
+        width: 25px;
+    }
+
+    .navbar-profile-icon,
+    .navbar-cart {
+        width: 32px;
+        height: 32px;
+    }
+
+    .navbar-search-box div button { 
+        right: 5px;  
+    }
+
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        padding: 12px 15px;
+    }
+
+    .navbar-search-box {
+        display: none;
+        width: 100%;
+    }
+
+    .search_btn {
+        display: block;
+        width: 25px;
+        height: 25px;
+    }
+
+
+}

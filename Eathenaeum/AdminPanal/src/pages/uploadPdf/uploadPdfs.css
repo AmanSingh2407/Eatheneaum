@@ -1,0 +1,120 @@
+.uploadpdf {
+    padding: 30px 40px;
+    margin: 60px auto 100px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    /* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px; */
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.uploadpdf-left img {
+    margin: 0 50px 50px 0;
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+.uploadpdf-right {
+    width: 100%;
+}
+
+.uploadpdf-right h2 {
+    margin-bottom: 25px;
+    color: #5a5959;
+    font-size: 30px;
+}
+
+.uploadpdf-right form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-input {
+    margin: 10px 0 5px;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background-color: #f3f3f3;
+    resize: none;
+    font-size: 16px;
+}
+
+.uploadpdf-right-input p {
+    text-align: end;
+    color: #585757;
+    font-size: 14px;
+}
+
+.uploadpdf-form-price {
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.uploadpdf-form-Img {
+    margin: 30px 0;
+    display: flex;
+    width: 80%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.uploadpdf-form-pdf {
+    margin: 20px 0;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.uploadpdf-form-pdf label {
+    margin-bottom: 10px;
+}
+
+.upload_cover {
+    margin-top: 10px;
+    width: 120px;
+}
+
+.upload-pdf-btn {
+    padding: 10px;
+    margin-top: 30px;
+    color: #fff;
+    background-color: #676565;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+.upload-pdf-btn:hover {
+    background-color: #585757;
+}
+
+
+
+/*   ------------------------  Media Query -------------------------------  */
+
+
+@media (max-width: 700px) {
+    .uploadpdf {
+        padding: 30px 15px;
+        box-shadow: none;
+    }
+
+    .uploadpdf-left img {
+        max-width: 250px;
+        margin: 0 0 50px 0;
+    }
+
+    .uploadpdf-form-price,
+    .add-img-upload,
+    .uploadpdf-form-pdf {
+        margin: 10px 0;
+    }
+
+}

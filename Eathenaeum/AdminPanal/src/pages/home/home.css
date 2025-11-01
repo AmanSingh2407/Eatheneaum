@@ -1,0 +1,186 @@
+.home {
+    padding: 15px 10px;
+}
+
+.home-pdf {
+    margin: 30px auto 0;
+    padding: 15px 15px;
+    max-width: 1000px;
+    min-height: 208px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+    border-radius: 5px;
+}
+
+.home-pdf-top {
+    display: flex;
+    gap: 30px;
+    position: relative;
+}
+
+.home-pdf-top img {
+    width: 80px;
+}
+
+.home-pdf-top-con {
+    width: calc(100% - 80px - 30px);
+}
+
+.home-pdf-top-con h2 {
+    margin-bottom: 5px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+}
+
+.home-pdf-top-con h2 img {
+    width: 20px;
+    margin-left: 10px;
+  
+}
+
+.home-pdf-top-con div {
+    display: flex;
+    align-items: center; 
+    gap: 10px;
+    font-size: 14px;
+}
+
+
+.home-pdf-top-con-date {
+    margin: auto;
+}
+
+.home-red {
+    font-weight: 600;
+    color: red;
+}
+
+.home-blue {
+    font-weight: 600;
+    color: rgb(20, 28, 255);
+}
+
+.home-pdf-top-btn {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    right: 0;
+}
+
+.home-pdf-top-btn button {
+    padding: 10px 25px;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.home-pdf-top-btn .ad-btn-delete {
+    background-color: #da5c5c;
+}
+
+.home-pdf-top-btn .ad-btn-delete:hover {
+    background-color: #ff0000;
+}
+
+.home-pdf-top-btn .ad-btn-update {
+    background-color: #4681f4;
+}
+
+.home-pdf-top-btn .ad-btn-update:hover {
+    background-color: #2020b3;
+}
+
+
+.home-pdf-bottomBox {
+    margin-top: 10px;
+}
+
+.home-pdf-bottomBox-des-show {
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+
+.home-pdf-des {
+    margin-top: 16px;
+    width: fit-content;
+}
+
+.home-no-organization {
+    padding: 20px;
+    margin: 200px auto 0;
+    font-size: 20px;
+    max-width: 500px;
+    border: 3px solid red;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.rotate {
+    transform: rotate(180deg);
+}
+
+
+/*   ---------------------------   Delete Confirmation   ---------------------------        */
+
+.home-delete-conf {
+    margin-top: 150px;
+    padding: 10px;
+    width: 350px;
+    height: 200px;
+    background-color: #fff;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 5;
+    left: 50%;
+    translate: -50% 0;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.home-delete-conf h4 {
+    width: 100%;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid red;
+}
+
+.home-delete-conf span {
+    margin: 10px 0;
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.home-delete-conf div {
+    display: flex;
+    gap: 20px;
+}
+
+.home-delete-conf div button {
+    width: 80px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+}

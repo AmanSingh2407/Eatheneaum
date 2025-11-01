@@ -1,0 +1,150 @@
+.p-policy {
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    color: #333;
+}
+
+.p-policy h1 {
+    margin: 20px 0 10px;
+    font-size: 37px;
+}
+
+.p-policy-para {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.p-policy-box1 h2,
+.p-policy-box2 h2 {
+    text-align: center;
+}
+
+.p-policy-box1-para,
+.p-policy-box2-para {
+    margin: 5px 0;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.p-policy-box1 hr {
+    margin: 15px 0;
+}
+
+.p-policy-box1-sub {
+    margin: 30px 0;
+}
+
+.p-policy-box1-sub h3 {
+    color: #4e4d4d;
+    text-transform: capitalize;
+}
+
+.p-policy-box1-sub div,
+.p-policy-box2-sub {
+    margin: 15px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.p-policy-box1-sub div span b,
+.p-policy-box2-sub span b {
+    color: #3a49bf;
+    width: max-content;
+    font-size: 18px;
+}
+
+
+.p-policy-box2 hr {
+    margin: 15px 0 35px;
+}
+
+.p-policy-box3 h2,
+.p-policy-box4 h2 {
+    color: #333;
+}
+
+.p-policy-box3 p {
+    margin: 5px 0;
+}
+
+/** ------- box-4  ------- */
+
+.p-policy-box4-sub h3 {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #3a49bf;
+}
+
+.p-policy-box4-sub-para {
+    margin-bottom: 10px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.p-policy-box4-sub ul li {
+    margin: 5px 0 5px;
+    display: flex;
+    gap: 10px;
+}
+
+.p-policy-box4-Link {
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+/* --------------------         Media Query ------------ */
+
+@media (max-width : 900px) {
+    .p-policy {
+        padding: 20px 20px;
+        gap: 20px;
+    }
+
+    .p-policy h1 {
+        font-size: 28px;
+    }
+
+    .p-policy h2 {
+        font-size: 18px;
+    }
+
+    .p-policy h3 {
+        font-size: 15px;
+    }
+
+    .p-policy p,
+    .p-policy a,
+    .p-policy span b,
+    .p-policy-box1-sub div span b,
+    .p-policy-box4-Link {
+        font-size: 13px;
+    }
+
+    .p-policy-box4-sub ul li {
+        flex-direction: column;
+        gap: 0;
+    }
+}
+
+@media (max-width : 500px) {
+    .p-policy {
+        padding: 10px;
+    }
+
+    .p-policy h1 {
+        font-size: 22px;
+    }
+
+    .p-policy p,
+    .p-policy a,
+    .p-policy span b,
+    .p-policy-box1-sub div span b,
+    .p-policy-box4-Link {
+        font-size: 10px;
+    }
+}

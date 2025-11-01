@@ -1,0 +1,56 @@
+.demoSyllabus {
+    padding: 100px 0;
+    position: absolute;
+    z-index: 5;
+    min-height: 100%;
+    width: 100%;
+    top: 0;
+    background-color: #00000090;
+    display: grid;
+}
+
+.demoSyllabus-container {
+    padding: 20px;
+    place-self: center;
+    width: max(50vw, 300px);
+    color: #808080;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    font-size: 14px;
+    animation: FadeIn 0.5s;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.demoSyllabus-container hr {
+    margin: 8px 0;
+}
+
+.demoSyllabus-container-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.demoSyllabus-container-header img {
+    cursor: pointer;
+    width: 30px;
+}
+
+/* ------------------  Media Query ---------------  */
+
+
+@media (max-width: 500px) {
+    .demoSyllabus-container {
+        padding: 10px;
+    }
+
+    .demoSyllabus-container-header h2 {
+        font-size: 16px;
+    }
+
+    .demoSyllabus-container-header img {
+        width: 18px;
+    }
+
+}

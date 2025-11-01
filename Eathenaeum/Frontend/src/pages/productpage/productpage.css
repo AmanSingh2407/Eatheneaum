@@ -1,0 +1,179 @@
+.product {
+    margin: 50px 0;
+    width: 100%;
+}
+
+.product-link {
+    display: flex;
+    /* flex-wrap: wrap; */
+    align-items: start;
+    padding: 30px 50px;
+    gap: 80px;
+
+}
+
+.product-link-image {
+    padding: 10px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.product-link-image img {
+    max-width: 200px;
+}
+
+.product-link-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-width: 350px;
+    max-width: 800px;
+    color: #333;
+}
+
+.product-title {
+    font-size: 30px;
+    text-transform: capitalize;
+}
+
+.product-description {
+    width: 100%;
+    opacity: 0.8;
+}
+
+.product-price {
+    font-size: 20px;
+    font-weight: 500;
+    color: #333;
+    text-transform: capitalize;
+}
+
+.product-link-details-btn {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.product-link-details-btn button {
+    margin-top: 30px;
+    padding: 10px 22px;
+    min-width: 100px;
+}
+
+
+.product-free {
+    background-color: red;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+/* ----------------------------     Related Product Page -----------------------------------*/
+
+.product-related {
+    margin: 20px 0 50px;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.product-related-main-h2 {
+    padding-bottom: 10px;
+    border: none;
+    border-bottom: 2px solid #333;
+    text-align: center;
+    font-weight: 500;
+}
+
+.product-related-books {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 60px 50px;
+}
+
+
+
+/*  ---------------------------- Media Query -------------------------------------------*/
+
+@media (max-width: 1050px) {
+
+    .product-link {
+        padding: 30px;
+        gap: 40px;
+    }
+
+    .product-title {
+        font-size: 25px;
+    }
+
+    .product-description {
+        font-size: 14px;
+    }
+
+    .product-price {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .product-link {
+        padding: 0px 20px 30px;
+        flex-wrap: wrap;
+    }
+
+    .product-link-image img {
+        width: 150px;
+    }
+
+    .product-link-details {
+        gap: 10px;
+    }
+
+}
+
+@media (max-width:600px) {
+
+    .product-link {
+        padding: 0px 10px 30px;
+    }
+
+    .product-link-image {
+        margin: auto;
+    }
+
+    .product-title {
+        font-size: 20px;
+    }
+
+    .product-description,
+    .product-price {
+        font-size: 12px;
+    }
+
+    .product-free {  
+        padding: 5px 8px; 
+        font-size: 10px;
+    }
+
+
+    .product-link-details-btn button {
+        margin-top: 10px;
+        padding: 10px;
+        min-width: 70px;
+    }
+
+    .product-related {
+        padding: 0 10px;
+    }
+
+    .product-related-main-h2 {
+        font-size: 20px;
+    }
+
+    .product-related-books {
+        gap: 40px 30px;
+    }
+}

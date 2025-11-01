@@ -1,0 +1,71 @@
+.navbar {
+    padding: 15px 30px;
+    width: 100%;
+}
+
+.navbar-left h2 {
+    margin: 0;
+    font-size: 40px;
+}
+
+.navbar-right {
+    position: relative;
+}
+
+.navbar-right-pro-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+.navbar-right-dropdown {
+    padding: 10px 0;
+    min-width: 250px;
+    display: none;
+    flex-direction: column;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    background-color: #fff;
+}
+
+.navbar-right:hover .navbar-right-dropdown {
+    display: flex;
+}
+
+
+.navbar-right-dropdown-btn {
+    padding: 10px 30px;
+    color: black;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.navbar-right-dropdown-btn img {
+    width: 20px;
+}
+
+.navbar-right-dropdown-btn:hover {
+    background-color: #e5e4e4;
+}
+
+/* ------------------------  Media Query  ---------------------------------- */
+
+@media (max-width: 600px) {
+    .navbar {
+        padding: 10px 20px;
+    }
+
+    .navbar-left h2 {
+        font-size: 20px;
+    }
+
+    .navbar-right img {
+        width: 30px;
+    }
+}

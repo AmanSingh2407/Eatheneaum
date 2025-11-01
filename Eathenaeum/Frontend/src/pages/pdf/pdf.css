@@ -1,0 +1,141 @@
+.myDocument {
+    width: 100vw;
+}
+
+.myDocument-navbar {
+    width: 100%;
+    background-color: #dedede;
+    justify-content: space-between;
+    padding: 10px 20px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+}
+
+.myDocument-navbar h3 {
+    text-transform: capitalize;
+}
+
+.myDocument-page-info {
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.myDocument-pdf-info {
+    gap: 8px;
+}
+
+.myDocument-pdf-info input {
+    padding: 10px;
+    border: none;
+    width: 50px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.myDocument-resize {
+    gap: 10px;
+}
+
+.myDocument-resize button {
+    background: none;
+    border: none;
+}
+
+.myDocument-resize button img {
+    margin-top: 2px;
+    height: 27px;
+    width: 27px;
+}
+
+.myDocument-resize p {
+    width: 70px;
+    padding: 5px 0;
+    border: 1px solid #333;
+    text-align: center;
+}
+
+
+.myDocument-btn button {
+    margin: 0 5px;
+    padding: 8px 15px;
+    /* border-radius: 5px; */
+    /* border: none; */
+    /* color: #fff; */
+    background-color: rgb(43, 43, 208);
+    /* cursor: pointer; */
+}
+
+.myDocument-box {
+    margin-top: 50px;
+}
+
+canvas.react-pdf__Page__canvas {
+    margin: 30px auto;
+    border: 2px solid rgb(4, 4, 4);
+}
+
+.pdf-page {
+    /* border: 1px solid black; */
+}
+
+/*       -------------------------------  Media Query  -----------------------------  */
+
+
+@media (max-width: 1000px) {
+  
+    .myDocument-navbar {
+        padding: 10px;
+    }
+
+    .myDocument-navbar h3 {
+        font-size: 16px;
+    }
+
+    .myDocument-page-info {
+        gap: 20px;
+    }
+
+    .myDocument-pdf-info span,
+    .myDocument-resize p,
+    .myDocument-btn button {
+        font-size: 14px;
+    }
+
+    .myDocument-resize button img {
+        height: 20px;
+        width: 20px;
+    }
+
+}
+
+
+@media (max-width: 800px) {
+
+    .myDocument-navbar h3 {
+        font-size: 13px;
+    }
+
+    .myDocument-page-info {
+        gap: 10px;
+    }
+
+    .myDocument-resize p,
+    .myDocument-btn button {
+        font-size: 12px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .myDocument-navbar h3,
+    .myDocument-btn button {
+        display: none;
+    }
+
+    .myDocument-page-info {
+        margin: auto;
+        gap: 30px;
+    }
+}

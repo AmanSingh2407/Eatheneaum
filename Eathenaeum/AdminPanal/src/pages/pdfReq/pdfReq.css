@@ -1,0 +1,12 @@
+.PDFReq-table {
+    margin-bottom: 10px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 0.8fr 2fr 1.5fr 1fr 1fr 0.5fr;
+    column-gap: 10px; 
+}
+
+.PDFBox-img {
+    width: 50px;
+    object-fit: cover;
+}
